@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pig Dice Game</title>
+  <link rel="stylesheet" href="CSS/bootstrap-grid.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="wrap clear">
+      <div class="row">
+        <div class=" column player1-panel act">
+          <div class="player" id="name-i">Player 1</div>
+          <div class="score" id="score-i">0</div>
+          <div class="current-player">
+            <div class="current-label">Current</div>
+            <div class="current-score" id="current-i">0</div>
+          </div>
+        </div>
+
+        <div class=" column player2-panel">
+          <div class="player" id="name-s">Player 2</div>
+          <div class="score" id="score-s">0</div>
+          <div class="current-player">
+            <div class="current-label">Current</div>
+            <div class="current-score" id="current-s">0</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <button class="btn-new"><i class="fal fa-plus-square"></i>New game</button>
+        <br>
+        <br>
+        <br>
+        <div class="column">
+          <img src="images/download.jpeg" alt="dice1" class="dice1 hid">
+          <img src="images/images.jpeg" alt="dice2" class="dice2 hid">
+        </div>
+        <button class="btn-roll"><i class=""></i>Roll dice</button>
+        <button class="btn-hold"><i class=""></i>Hold</button>
+      </div>
+<br>
+<br>
+
+      <div class="input-wrapper">
+        <span class="input-wrapper-desc">Score to collect:</span>
+        <input type="text" class="score-input" id="finalScoreInput" value="100">
+      </div>
+
+      <div class="row">
+
+
+        <a href="#" class="help"><i class="ion-help-circled"></i></a>
+      </div>
+
+      <div class="help-R">
+
+        <h3>Rules</h3>
+        <p>Each player throws cubes (ROLL DICE button) by gaining points for each move until one of the cubes falls 1 or the player decides to stop (the HOLD button)</p>
+        <p>If a player falls, the player does not receive anything for this round. If the player has decided to stop before throwing 1, all points earned per round are added to his general account.</p>
+        <p>Then the move passes to another player.</p>
+        <p>If a player falls 6 times in a row on one of the cubes, he loses all the saved points and all points in the round.</p>
+        <p>The winner is the one who first gathers 100 points.</p>
+        <p>To start a new game, tap NEW GAME.</p>
+
+        <a href="" class="help-R-close"><i class="ion-close-round"></i>Close</a>
+
+      </div>
+    </div>
+
+    <script src="JS/scripts.js"></script>
+</body>
+
+</html>
